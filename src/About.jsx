@@ -25,7 +25,7 @@ const About = () => {
           <div className="p-2 border border-[#2a8171] inline-block rounded-full sm:rounded-md ">
             <img
               className="object-cover rounded-full sm:rounded-none h-36 w-36 sm:h-96 sm:w-96 "
-              src="..Img.avif"
+              src="../image/Img.avif"
               alt="/"
             />
           </div>

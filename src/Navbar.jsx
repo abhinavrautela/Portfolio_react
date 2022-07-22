@@ -21,7 +21,7 @@ const Navbar = () => {
           >
             <div className="">
               <img
-                className="h-6 w-20"
+                className="h-10 w-20"
                 src="../image/SignAR.png"
                 alt="/"
               />
