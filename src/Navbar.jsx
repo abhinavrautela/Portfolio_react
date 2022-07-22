@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className="">
               <img
                 className="h-6 w-20"
-                src="../public/image/SignAR.png"
+                src="../image/SignAR.png"
                 alt="/"
               />
             </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <div>
                   <img
                     className="h-10 w-20"
-                    src="../public/image/SignAR.png"
+                    src="../image/SignAR.png"
                     alt="/"
                   />
                 </div>

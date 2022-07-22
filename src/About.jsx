@@ -25,7 +25,7 @@ const About = () => {
           <div className="p-2 border border-[#2a8171] inline-block rounded-full sm:rounded-md ">
             <img
               className="object-cover rounded-full sm:rounded-none h-36 w-36 sm:h-96 sm:w-96 "
-              src="../public/image/Img.avif"
+              src="..Img.avif"
               alt="/"
             />
           </div>
@@ -140,7 +140,7 @@ const About = () => {
                   <div className="flex items-center space-x-4">
                     <img
                       className=" object-cover rounded-full h-16 w-16 "
-                      src="../public/image/Img.avif"
+                      src="../image/Img.avif"
                       alt="/"
                     />
                     <span>
@@ -156,7 +156,7 @@ const About = () => {
                   <div className="flex items-center space-x-4">
                     <img
                       className=" object-cover rounded-full h-16 w-16 "
-                      src="../public/image/Img.avif"
+                      src="../image/Img.avif"
                       alt="/"
                     />
                     <span>
@@ -172,7 +172,7 @@ const About = () => {
                   <div className="flex items-center space-x-4">
                     <img
                       className=" object-cover rounded-full h-16 w-16 "
-                      src="../public/image/Img.avif"
+                      src="../image/Img.avif"
                       alt="/"
                     />
                     <span>
