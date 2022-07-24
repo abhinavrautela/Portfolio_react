@@ -15,8 +15,8 @@ import Card from "./Card";
 
 const About = () => {
   return (
-    <div className="h-screen w-[100%] px-5 sm:px-24 py-16 space-y-20">
-      <div className="flex flex-col items-center space-y-8 sm:space-y-16">
+    <div className="h-screen w-[100%] px-5 sm:px-24 py-16 ">
+      <div className="flex flex-col items-center space-y-8 sm:space-y-32">
         <div>
           <p className="font-mono text-xs text-center">Get to know</p>
           <h1>About Me</h1>
@@ -102,7 +102,7 @@ const About = () => {
               <h2>Skills</h2>
               <p className="text-sm">What can I do</p>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-5 hidden sm:block">
               <div className="flex justify-between">
                 <Card>
                   <DiHtml5 size="60" />
@@ -132,62 +132,139 @@ const About = () => {
                 </Card>
               </div>
             </div>
+            <div className=" block sm:hidden">
+              <Card>
+                <DiHtml5 size="60" />
+                <h3 className="text-xl font-normal">HTML5</h3>
+              </Card>
+              <Card>
+                <DiCss3 size="60" />
+                <h3 className="text-xl font-normal">Css3</h3>
+              </Card>
+              <Card>
+                <DiJavascript1 size="60" />
+                <h3 className="text-xl font-normal">JavaScript</h3>
+              </Card>
+
+              <Card>
+                <DiReact size="60" />
+                <h3 className="text-xl font-normal">React</h3>
+              </Card>
+              <Card>
+                <SiTailwindcss size="60" />
+                <h3 className="text-xl font-normal">TailwindCSS</h3>
+              </Card>
+              <Card>
+                <BsGithub size="60" />
+                <h3 className="text-xl font-normal">GIT</h3>
+              </Card>
+            </div>
+          </div>
+        </div>
+        <div className="w-full">
+          <div className="pb-7">
+            <h2>Testimonials</h2>
+            <p className="text-sm">What my clients think about me</p>
+          </div>
+          <div className="sm:flex space-x-2 hidden">
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
+                </div>
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
+                </div>
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
+                </div>
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
           </div>
           <div>
-            <div className="pb-7">
-              <h2>Testimonials</h2>
-              <p className="text-sm">What my clients think about me</p>
-            </div>
-            <div className="flex space-x-2 snap-x snap-mandatory">
-              <Card myTheme="notask">
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-4">
-                    <img
-                      className=" object-cover rounded-full h-16 w-16 "
-                      src="../image/Img.avif"
-                      alt="/"
-                    />
-                    <span>
-                      <h3>Mike</h3>
-                      <p className="text-sm">Customer</p>
-                    </span>
-                  </div>
-                  <RiDoubleQuotesR size="35" />
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
                 </div>
-              </Card>
-              <Card myTheme="notask">
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-4">
-                    <img
-                      className=" object-cover rounded-full h-16 w-16 "
-                      src="../image/Img.avif"
-                      alt="/"
-                    />
-                    <span>
-                      <h3>Mike</h3>
-                      <p className="text-sm">Customer</p>
-                    </span>
-                  </div>
-                  <RiDoubleQuotesR size="35" />
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
                 </div>
-              </Card>
-              <Card myTheme="notask">
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-4">
-                    <img
-                      className=" object-cover rounded-full h-16 w-16 "
-                      src="../image/Img.avif"
-                      alt="/"
-                    />
-                    <span>
-                      <h3>Mike</h3>
-                      <p className="text-sm">Customer</p>
-                    </span>
-                  </div>
-                  <RiDoubleQuotesR size="35" />
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
+            <Card myTheme="notask">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-4">
+                  <img
+                    className=" object-cover rounded-full h-16 w-16 "
+                    src="../image/Img.avif"
+                    alt="/"
+                  />
+                  <span>
+                    <h3>Mike</h3>
+                    <p className="text-sm">Customer</p>
+                  </span>
                 </div>
-              </Card>
-            </div>
+                <RiDoubleQuotesR size="35" />
+              </div>
+            </Card>
           </div>
         </div>
       </div>
