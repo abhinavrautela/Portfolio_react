@@ -15,7 +15,7 @@ import Card from "./Card";
 
 const About = () => {
   return (
-    <div className="w-[100%] px-5 sm:px-24 pt-5 ">
+    <div className="w-[100%] px-5 sm:px-24 pt-5">
       <div className="flex flex-col items-center space-y-8 sm:space-y-20 ">
         <div>
           <p className="font-mono text-xs text-center">Get to know</p>
@@ -74,7 +74,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex space-x-4 items-center grow">
-              <Button>Download CV</Button>
+              <Button myTheme="notsimple">Download CV</Button>
               <span className=" border border-gray-600 w-20"></span>
               <div className="flex ">
                 <div className="ml-3 cursor-pointer">
