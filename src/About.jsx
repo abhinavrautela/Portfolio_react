@@ -11,13 +11,12 @@ import {
 import { DiCss3, DiJavascript1, DiHtml5, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import { Scrollbars } from "react-custom-scrollbars-2";
 import Card from "./Card";
 
 const About = () => {
   return (
-    <div className="h-screen w-[100%] px-5 sm:px-24 py-16 ">
-      <div className="flex flex-col items-center space-y-8 sm:space-y-32">
+    <div className="w-[100%] px-5 sm:px-24 pt-5 ">
+      <div className="flex flex-col items-center space-y-8 sm:space-y-20 ">
         <div>
           <p className="font-mono text-xs text-center">Get to know</p>
           <h1>About Me</h1>
@@ -79,19 +78,32 @@ const About = () => {
               <span className=" border border-gray-600 w-20"></span>
               <div className="flex ">
                 <div className="ml-3 cursor-pointer">
-                  <BsTwitter />
+                  <a href="https://twitter.com/A6hi9v" target="_blank">
+                    <BsTwitter />
+                  </a>
                 </div>
                 <div className="ml-3 cursor-pointer">
-                  <BsInstagram />
+                  <a href="https://instagram.com/A6hi9v" target="_blank">
+                    <BsInstagram />
+                  </a>
                 </div>
                 <div className="ml-3 cursor-pointer">
-                  <BsLinkedin />
+                  <a
+                    href="https://www.linkedin.com/in/abhinav-rautela/"
+                    target="_blank"
+                  >
+                    <BsLinkedin />
+                  </a>
                 </div>
                 <div className="ml-3 cursor-pointer">
-                  <BsGithub />
+                  <a href="https://github.com/abhinavrautela" target="_blank">
+                    <BsGithub />
+                  </a>
                 </div>
                 <div className="ml-3 cursor-pointer">
-                  <BsFacebook />
+                  <a href="" target="_blank">
+                    <BsFacebook />
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,7 +113,7 @@ const About = () => {
           <div>
             <div className="pb-7">
               <h2>Skills</h2>
-              <p className="text-sm">What can I do</p>
+              <p className="text-xs">What can I do</p>
             </div>
             <div className="space-y-5 hidden sm:block">
               <div className="flex justify-between">
@@ -177,7 +189,7 @@ const About = () => {
         <div className="w-full">
           <div className="pb-7">
             <h2>Testimonials</h2>
-            <p className="text-sm">What my clients think about me</p>
+            <p className="text-xs">What my clients think about me</p>
           </div>
           <div className="sm:flex space-x-2 hidden">
             <Card myTheme="notask">

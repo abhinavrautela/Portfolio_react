@@ -13,19 +13,15 @@
     h4,
     h5,
     h6 {
-        @apply font-bold text-gray-200
+        @apply text-gray-200
     }
 
     h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl tracking-wide
+        @apply text-4xl font-extrabold sm:text-5xl md:text-6xl tracking-wide
     }
 
     h2 {
-        @apply text-3xl sm:text-4xl
-    }
-
-    li {
-        @apply cursor-pointer font-semibold
+        @apply text-3xl font-medium  sm:text-4xl
     }
     p {
         @apply font-mono tracking-tight text-lg text-gray-400
