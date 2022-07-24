@@ -11,6 +11,7 @@ import {
 import { DiCss3, DiJavascript1, DiHtml5, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { Scrollbars } from "react-custom-scrollbars-2";
 import Card from "./Card";
 
 const About = () => {
@@ -132,31 +133,43 @@ const About = () => {
                 </Card>
               </div>
             </div>
-            <div className=" block sm:hidden">
+            <div className="block sm:hidden">
               <Card>
-                <DiHtml5 size="60" />
-                <h3 className="text-xl font-normal">HTML5</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <DiHtml5 size="60" />
+                  <h3 className="text-xl font-normal">HTML5</h3>
+                </div>
               </Card>
               <Card>
-                <DiCss3 size="60" />
-                <h3 className="text-xl font-normal">Css3</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <DiCss3 size="60" />
+                  <h3 className="text-xl font-normal">Css3</h3>
+                </div>
               </Card>
               <Card>
-                <DiJavascript1 size="60" />
-                <h3 className="text-xl font-normal">JavaScript</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <DiJavascript1 size="60" />
+                  <h3 className="text-xl font-normal">JavaScript</h3>
+                </div>
               </Card>
 
               <Card>
-                <DiReact size="60" />
-                <h3 className="text-xl font-normal">React</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <DiReact size="60" />
+                  <h3 className="text-xl font-normal">React</h3>
+                </div>
               </Card>
               <Card>
-                <SiTailwindcss size="60" />
-                <h3 className="text-xl font-normal">TailwindCSS</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <SiTailwindcss size="60" />
+                  <h3 className="text-xl font-normal">TailwindCSS</h3>
+                </div>
               </Card>
               <Card>
-                <BsGithub size="60" />
-                <h3 className="text-xl font-normal">GIT</h3>
+                <div className="w-[85%] flex justify-between items-center">
+                  <BsGithub size="60" />
+                  <h3 className="text-xl font-normal">GIT</h3>
+                </div>
               </Card>
             </div>
           </div>
@@ -216,9 +229,10 @@ const About = () => {
               </div>
             </Card>
           </div>
-          <div>
+
+          <div className="sm:hidden space-y-5">
             <Card myTheme="notask">
-              <div className="flex justify-between items-center">
+              <div className="flex w-full justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
                     className=" object-cover rounded-full h-16 w-16 "
@@ -233,8 +247,9 @@ const About = () => {
                 <RiDoubleQuotesR size="35" />
               </div>
             </Card>
+
             <Card myTheme="notask">
-              <div className="flex justify-between items-center">
+              <div className="flex w-full justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
                     className=" object-cover rounded-full h-16 w-16 "
@@ -249,8 +264,9 @@ const About = () => {
                 <RiDoubleQuotesR size="35" />
               </div>
             </Card>
+
             <Card myTheme="notask">
-              <div className="flex justify-between items-center">
+              <div className="flex w-full justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
                     className=" object-cover rounded-full h-16 w-16 "
