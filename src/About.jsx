@@ -102,31 +102,35 @@ const About = () => {
               <h2>Skills</h2>
               <p className="text-sm">What can I do</p>
             </div>
-            <div className=" flex justify-evenly space-x-2">
-              <Card>
-                <DiHtml5 size="60" />
-                <h3 className="text-xl font-normal">HTML5</h3>
-              </Card>
-              <Card>
-                <DiCss3 size="60" />
-                <h3 className="text-xl font-normal">Css3</h3>
-              </Card>
-              <Card>
-                <DiJavascript1 size="60" />
-                <h3 className="text-xl font-normal">JavaScript</h3>
-              </Card>
-              <Card>
-                <DiReact size="60" />
-                <h3 className="text-xl font-normal">JavaScript</h3>
-              </Card>
-              <Card>
-                <SiTailwindcss size="60" />
-                <h3 className="text-xl font-normal">JavaScript</h3>
-              </Card>
-              <Card>
-                <BsGithub size="60" />
-                <h3 className="text-xl font-normal">JavaScript</h3>
-              </Card>
+            <div className="space-y-5">
+              <div className="flex justify-between">
+                <Card>
+                  <DiHtml5 size="60" />
+                  <h3 className="text-xl font-normal">HTML5</h3>
+                </Card>
+                <Card>
+                  <DiCss3 size="60" />
+                  <h3 className="text-xl font-normal">Css3</h3>
+                </Card>
+                <Card>
+                  <DiJavascript1 size="60" />
+                  <h3 className="text-xl font-normal">JavaScript</h3>
+                </Card>
+              </div>
+              <div className="flex justify-between">
+                <Card>
+                  <DiReact size="60" />
+                  <h3 className="text-xl font-normal">React</h3>
+                </Card>
+                <Card>
+                  <SiTailwindcss size="60" />
+                  <h3 className="text-xl font-normal">TailwindCSS</h3>
+                </Card>
+                <Card>
+                  <BsGithub size="60" />
+                  <h3 className="text-xl font-normal">GIT</h3>
+                </Card>
+              </div>
             </div>
           </div>
           <div>
