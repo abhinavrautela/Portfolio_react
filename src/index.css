@@ -17,7 +17,7 @@
     }
 
     h1 {
-        @apply text-4xl font-extrabold sm:text-5xl md:text-6xl tracking-wide
+        @apply  font-extrabold text-5xl md:text-6xl tracking-wider
     }
 
     h2 {

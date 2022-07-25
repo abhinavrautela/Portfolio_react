@@ -38,11 +38,8 @@ const Navbar = () => {
                     About
                   </h1>
                 </Link>
-                <Link to="/skills">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
-                    Skills
-                  </h1>
-                </Link>
+        
+          
                 <Link to="/project">
                   <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
                     Project
@@ -99,9 +96,6 @@ const Navbar = () => {
                 </Link>
                 <Link to="/about">
                   <h1 className="p-2 text-sm">About</h1>
-                </Link>
-                <Link to="/skills">
-                  <h1 className="p-2 text-sm">Skills</h1>
                 </Link>
                 <Link to="/project">
                   <h1 className="p-2 text-sm">Projects</h1>
