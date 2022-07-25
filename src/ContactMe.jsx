@@ -1,5 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import { VscSymbolNamespace } from "react-icons/vsc";
+import { IoMdCall, IoIosSend } from "react-icons/io";
+import { ImLocation } from "react-icons/im";
+import { Link } from "react-router-dom";
+import { IconContext } from "react-icons/lib";
 
 const ContactMe = () => {
   return (
@@ -10,44 +15,101 @@ const ContactMe = () => {
         </p>
         <h1>Get in Touch</h1>
       </div>
-      <div className="pt-14">
-        <div>
-          <div className="w-[47%] space-y-3">
-            <h3 className="text-2xl font-semibold">Message me</h3>
-            <div className=" flex justify-between items-center ">
-              <div className="w-[46%]">
-                <input
-                  placeholder="Name "
-                  value={""}
-                  onChange={""}
-                  type="text"
-                  className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-                />
-              </div>
-              <div className="w-[46%]">
-                <input
-                  placeholder="Email"
-                  value={""}
-                  onChange={""}
-                  type="text"
-                  className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-                />
-              </div>
-            </div>
-            <div className="space-y-3">
+      <div className="pt-14 sm:flex space-y-8 sm:space-y-0 justify-between">
+        <div className="sm:w-[60%] space-y-3">
+          <h3 className="text-2xl font-semibold">Message me</h3>
+          <div className=" flex justify-between items-center ">
+            <div className="w-[46%]">
               <input
-                placeholder="Subject"
+                placeholder="Name "
                 value={""}
                 onChange={""}
                 type="text"
-                className="bg-[#1e1b1b] w-full p-3 outline-none border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+                className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
               />
-              <textarea
-                placeholder="Message"
-                className="bg-[#1e1b1b] w-full h-28 p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-              ></textarea>
-             <Button children={"Send Message"} myTheme="simple"/>
             </div>
+            <div className="w-[46%]">
+              <input
+                placeholder="Email"
+                value={""}
+                onChange={""}
+                type="text"
+                className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+              />
+            </div>
+          </div>
+          <div className="space-y-3">
+            <input
+              placeholder="Subject"
+              value={""}
+              onChange={""}
+              type="text"
+              className="bg-[#1e1b1b] w-full p-3 outline-none border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+            />
+            <textarea
+              placeholder="Message"
+              className="bg-[#1e1b1b] w-full h-32 p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+            ></textarea>
+            <Button children={"Send Message"} myTheme="simple" />
+          </div>
+        </div>
+
+        <div className="sm:w-[35%] w-full space-y-4">
+          <h3 className="text-2xl font-semibold">Contact Info</h3>
+          <p>
+            Always available for freelance work if the right project comes
+            along, Feel free to contact me!
+          </p>
+
+          <div>
+            <IconContext.Provider value={{ color: "#2a8171" }}>
+              <div className="flex items-center py-2">
+                <div className="pr-5 border-r   border-gray-500">
+                  <VscSymbolNamespace size="30" />
+                </div>
+                <div className="pl-16">
+                  <h3 className="font-semibold text-xl">Name</h3>
+                  <p className="text-sm">Abhinav Rautela</p>
+                </div>
+              </div>
+              <div className="flex items-center py-2">
+                <div className="pr-5 border-r border-gray-500">
+                  <ImLocation size="30" />
+                </div>
+                <div className="pl-16">
+                  <h3 className="font-semibold text-xl">Location</h3>
+                  <p className="text-sm">Nainital, 263002</p>
+                </div>
+              </div>
+              <div className="flex items-center py-2">
+                <div className="pr-5 border-r border-gray-500">
+                  <IoMdCall size="30" />
+                </div>
+                <div className="pl-16">
+                  <h3 className="font-semibold text-xl">PhoneNO.</h3>
+                  <p className="text-sm">12345</p>
+                </div>
+              </div>
+              <div className="flex items-center py-2">
+                <div className="pr-5 border-r border-gray-500">
+                  <IoIosSend size="30" />
+                </div>
+                <div className="pl-16">
+                  <h3 className="font-semibold text-xl ">EMail</h3>
+                  <p className="text-sm">
+                    <Link
+                      to="#"
+                      onClick={(e) => {
+                        window.location.href = "mailto:rautela014@gamil.com";
+                        e.preventDefault();
+                      }}
+                    >
+                      rautela014@gamil
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </IconContext.Provider>
           </div>
         </div>
       </div>
