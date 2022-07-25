@@ -10,7 +10,7 @@ const FrontPage = () => {
     <>
       <div>
         <div className=" bg-black/80">
-          <div className="bg-cover object-cover bg-[url(../image/BGround.avif)]">
+          <div className="bg-cover object-cover bg-[url(../image/BGroundXm.jpg)] sm:bg-[url(../image/BGround.avif)]">
             <div className=" bg-black/80">
               <div className="h-screen w-full sm:w-[50%] flex flex-col justify-end sm:justify-center sm:items-center ">
                 <div className="flex flex-col items-center pt-20">
