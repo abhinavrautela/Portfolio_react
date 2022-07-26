@@ -28,7 +28,7 @@
             @apply font-bold tracking-wide
         }
     p {
-        @apply font-mono tracking-tight text-lg text-gray-400
+        @apply font-mono tracking-tighter text-lg text-gray-400
     }
     button {
         @apply shadow-md
