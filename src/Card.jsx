@@ -8,15 +8,13 @@ const Card = ({children, myTheme}) => {
     }
   return (
     <>
-      <IconContext.Provider value={{ color: "#2a8171" }}>
-       
+      <IconContext.Provider value={{ color: "#2a8171", }}>
           <div
             className={`p-4 sm:p-10 bg-[#1e1b1b] space-y-3 shadow-lg shadow-[#030202] sm:shadow-[#0f0d0d] ${themeClass}`}
           >
             {children}
           </div>
-        
-      </IconContext.Provider>
+     </IconContext.Provider>
     </>
   );
 }

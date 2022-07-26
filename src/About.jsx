@@ -20,7 +20,7 @@ import Card from "./Card";
 
 const About = () => {
   return (
-    <div className="w-[100%] px-5 sm:px-24 pt-5">
+    <div id="about" className="w-[100%] px-5 sm:px-24 pt-5">
       <div className="flex flex-col items-center space-y-8 sm:space-y-20 ">
         <div>
           <p className="font-mono text-xs text-center">Get to know</p>
@@ -165,7 +165,9 @@ const About = () => {
               </Card>
               <Card>
                 <div className="w-[85%] flex justify-between items-center">
-                  <DiNodejsSmall size="60" />
+                  <DiNodejsSmall
+                    size="60"
+                  />
                   <h3 className="text-xl font-normal">Node</h3>
                 </div>
               </Card>

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import FrontPage from "./FrontPage";
+import { Link } from "react-scroll";
 import { useState } from "react";
 import { AiOutlineClose, AiFillGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
@@ -19,29 +18,53 @@ const Navbar = () => {
           <div
             className={navBar ? "hidden" : "flex items-center justify-between"}
           >
-            <div className="">
+            <div>
               <img className="h-10 w-20" src="../image/SignAR.png" alt="/" />
             </div>
             <div>
               <div className="hidden  text-white p-2 sm:flex  uppercase">
-                <Link to="/home">
-                  <h1 className="ml-10  font-semibold text-sm hover:scale-125  ease-in-out  duration-200">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  <h1 className="ml-10  font-semibold text-sm hover:scale-125  ease-in-out  duration-200 cursor-pointer">
                     Home
                   </h1>
                 </Link>
-                <Link to="/about">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
                     About
                   </h1>
                 </Link>
 
-                <Link to="/project">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
+                <Link
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
                     Project
                   </h1>
                 </Link>
-                <Link to="/contact">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                >
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
                     Contact
                   </h1>
                 </Link>
@@ -86,17 +109,45 @@ const Navbar = () => {
                 </p>
               </div>
               <div className="py-4 flex flex-col uppercase tracking-wide text-white font-thin">
-                <Link to="/home">
-                  <h1 className="p-2 text-sm">Home</h1>
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={toggalNav}
+                >
+                  <h1 className="p-2 text-sm ">Home</h1>
                 </Link>
-                <Link to="/about">
-                  <h1 className="p-2 text-sm">About</h1>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={toggalNav}
+                >
+                  <h1 className="p-2 text-sm ">About</h1>
                 </Link>
-                <Link to="/project">
-                  <h1 className="p-2 text-sm">Projects</h1>
+                <Link
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={toggalNav}
+                >
+                  <h1 className="p-2 text-sm ">Projects</h1>
                 </Link>
-                <Link to="/contact">
-                  <h1 className="p-2 text-sm">Contact</h1>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={toggalNav}
+                >
+                  <h1 className="p-2 text-sm ">Contact</h1>
                 </Link>
 
                 <div className="pt-40 pb-2">

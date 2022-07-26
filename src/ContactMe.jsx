@@ -8,7 +8,7 @@ import { IconContext } from "react-icons/lib";
 
 const ContactMe = () => {
   return (
-    <div className="w-[100%] px-5 sm:px-24 pt-24 ">
+    <div id="contact" className="w-[100%] px-5 sm:px-24 pt-24 ">
       <div className="text-center">
         <p className="tracking-tighter text-xs sm:text-sm">
           Feel free to contact me anytime

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const FrontPage = () => {
   return (
     <>
-      <div>
+      <div id="home">
         <div className=" bg-black/80">
           <div className="bg-cover object-cover bg-[url(../image/BGroundXm.jpg)] sm:bg-[url(../image/BGround.avif)]">
             <div className=" bg-black/80">
@@ -25,16 +25,16 @@ const FrontPage = () => {
                       Abhinav Rautela
                     </h1>
                   </div>
-                  <p className="text-2xl font-sans text-white ml-3">
+                  <p className="text-2xl font-sans tracking-tighter text-white ml-3">
                     I&#39;m a
-                    <span className="bg-clip-text ml-2 text-transparent sm:tracking-widest bg-gradient-to-r from-red-500 to-red-700">
+                    <span className=" ml-2 sm:tracking-widest">
                       Full Stack Web Devloper
                     </span>
                   </p>
                 </div>
                 <div className="self-end sm:self-center py-4 sm:py-0">
                   <div className="inline-block sm:flex sm:py-3 sm:space-x-8 ">
-                    <div className="rounded-full p-3 cursor-pointer shadow-lg text-gray-100  shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
+                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100  shadow-gray-900 hover:bg-[#101010] hover:text-color-[#2a8171] ease-in duration-300 hover:text-[#22a18a]">
                       <a
                         href="https://www.linkedin.com/in/abhinav-rautela/"
                         target="_blank"
@@ -42,7 +42,7 @@ const FrontPage = () => {
                         <GrLinkedinOption />
                       </a>
                     </div>
-                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
+                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300 hover:text-[#22a18a]">
                       <a
                         href="https://github.com/abhinavrautela"
                         target="_blank"
@@ -50,7 +50,7 @@ const FrontPage = () => {
                         <AiFillGithub />
                       </a>
                     </div>
-                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
+                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300 hover:text-[#22a18a]">
                       <Link
                         to="#"
                         onClick={(e) => {
@@ -61,7 +61,7 @@ const FrontPage = () => {
                         <MdMailOutline />
                       </Link>
                     </div>
-                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
+                    <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300 hover:text-[#22a18a]">
                       <a href="" target="_blank">
                         <BsFillPersonLinesFill />
                       </a>
