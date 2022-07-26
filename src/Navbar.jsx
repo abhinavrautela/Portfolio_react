@@ -20,33 +20,28 @@ const Navbar = () => {
             className={navBar ? "hidden" : "flex items-center justify-between"}
           >
             <div className="">
-              <img
-                className="h-10 w-20"
-                src="../image/SignAR.png"
-                alt="/"
-              />
+              <img className="h-10 w-20" src="../image/SignAR.png" alt="/" />
             </div>
             <div>
-              <div className="hidden font-semibold text-white p-2 sm:flex  uppercase">
+              <div className="hidden  text-white p-2 sm:flex  uppercase">
                 <Link to="/home">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
+                  <h1 className="ml-10  font-semibold text-sm hover:scale-125  ease-in-out  duration-200">
                     Home
                   </h1>
                 </Link>
                 <Link to="/about">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
                     About
                   </h1>
                 </Link>
-        
-          
+
                 <Link to="/project">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
                     Project
                   </h1>
                 </Link>
                 <Link to="/contact">
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out  duration-200">
+                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200">
                     Contact
                   </h1>
                 </Link>
