@@ -25,7 +25,7 @@ const FrontPage = () => {
                       Abhinav Rautela
                     </h1>
                   </div>
-                  <p className="text-2xl font-sans text-white bg-clip-text  ml-3">
+                  <p className="text-2xl font-sans text-white ml-3">
                     I&#39;m a
                     <span className="bg-clip-text ml-2 text-transparent sm:tracking-widest bg-gradient-to-r from-red-500 to-red-700">
                       Full Stack Web Devloper
