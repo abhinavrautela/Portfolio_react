@@ -187,12 +187,13 @@ const About = () => {
           </div>
         </div>
         <div className="w-full">
-          <div className="pb-7">
+          <div className="pb-7 inline-block">
             <h2>Testimonials</h2>
-            <p className="text-xs">What my clients think about me</p>
+            <p className="text-xs text-center ml-1">What my clients think about me</p>
           </div>
-          <div className="sm:flex space-x-2 hidden">
+          <div className=" flex  space-x-4 overflow-x-auto pb-4 h-max">
             <Card myTheme="notask">
+              <div>
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
@@ -207,8 +208,15 @@ const About = () => {
                 </div>
                 <RiDoubleQuotesR size="35" />
               </div>
+              <div className="pt-4 w]">
+                <p className="text-base text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt necessitatibus enim ut incidunt totam rem praesentium excepturi, perferendis labore est accusamus facilis nisi tempora quasi illo quisquam saepe nostrum cumque?
+                Eaque aut, vitae nisi laudantium ex facere iste quis itaque voluptas odit adipisci nam accusantium quae iusto ea porro autem sunt totam. Repellat dignissimos cumque id, sed eius totam deserunt.
+                Cum in necessitatibus deserunt modi reprehenderit, eveniet dolor est dicta voluptatum odio vel voluptates ullam a suscipit quisquam officiis excepturi nisi enim aut? Rerum veritatis placeat voluptate corporis, </p>
+              </div>
+              </div>
             </Card>
             <Card myTheme="notask">
+              <div>
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
@@ -223,8 +231,15 @@ const About = () => {
                 </div>
                 <RiDoubleQuotesR size="35" />
               </div>
+              <div className="pt-4 w]">
+                <p className="text-base text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt necessitatibus enim ut incidunt totam rem praesentium excepturi, perferendis labore est accusamus facilis nisi tempora quasi illo quisquam saepe nostrum cumque?
+                Eaque aut, vitae nisi laudantium ex facere iste quis itaque voluptas odit adipisci nam accusantium quae iusto ea porro autem sunt totam. Repellat dignissimos cumque id, sed eius totam deserunt.
+                Cum in necessitatibus deserunt modi reprehenderit, eveniet dolor est dicta voluptatum odio vel voluptates ullam a suscipit quisquam officiis excepturi nisi enim aut? Rerum veritatis placeat voluptate corporis,</p>
+              </div>
+              </div>
             </Card>
             <Card myTheme="notask">
+              <div>
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                   <img
@@ -239,58 +254,11 @@ const About = () => {
                 </div>
                 <RiDoubleQuotesR size="35" />
               </div>
-            </Card>
-          </div>
-
-          <div className="sm:hidden space-y-5">
-            <Card myTheme="notask">
-              <div className="flex w-full justify-between items-center">
-                <div className="flex items-center space-x-4">
-                  <img
-                    className=" object-cover rounded-full h-16 w-16 "
-                    src="../image/Img.avif"
-                    alt="/"
-                  />
-                  <span>
-                    <h3>Mike</h3>
-                    <p className="text-sm">Customer</p>
-                  </span>
-                </div>
-                <RiDoubleQuotesR size="35" />
+              <div className="pt-4 ">
+                <p className="text-base text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt necessitatibus enim ut incidunt totam rem praesentium excepturi, perferendis labore est accusamus facilis nisi tempora quasi illo quisquam saepe nostrum cumque?
+                Eaque aut, vitae nisi laudantium ex facere iste quis itaque voluptas odit adipisci nam accusantium quae iusto ea porro autem sunt totam. Repellat dignissimos cumque id, sed eius totam deserunt.
+                Cum in necessitatibus deserunt modi reprehenderit, eveniet dolor est dicta voluptatum odio vel voluptates ullam a suscipit quisquam officiis excepturi nisi enim aut? Rerum veritatis placeat voluptate corporis, </p>
               </div>
-            </Card>
-
-            <Card myTheme="notask">
-              <div className="flex w-full justify-between items-center">
-                <div className="flex items-center space-x-4">
-                  <img
-                    className=" object-cover rounded-full h-16 w-16 "
-                    src="../image/Img.avif"
-                    alt="/"
-                  />
-                  <span>
-                    <h3>Mike</h3>
-                    <p className="text-sm">Customer</p>
-                  </span>
-                </div>
-                <RiDoubleQuotesR size="35" />
-              </div>
-            </Card>
-
-            <Card myTheme="notask">
-              <div className="flex w-full justify-between items-center">
-                <div className="flex items-center space-x-4">
-                  <img
-                    className=" object-cover rounded-full h-16 w-16 "
-                    src="../image/Img.avif"
-                    alt="/"
-                  />
-                  <span>
-                    <h3>Mike</h3>
-                    <p className="text-sm">Customer</p>
-                  </span>
-                </div>
-                <RiDoubleQuotesR size="35" />
               </div>
             </Card>
           </div>
