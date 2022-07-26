@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+
 import {
   BsInstagram,
   BsLinkedin,
@@ -167,6 +168,7 @@ const About = () => {
                 <div className="w-[85%] flex justify-between items-center">
                   <DiNodejsSmall
                     size="60"
+
                   />
                   <h3 className="text-xl font-normal">Node</h3>
                 </div>

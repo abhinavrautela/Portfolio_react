@@ -1,10 +1,11 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import TextAnimation from "react-text-animations";
 import { GrLinkedinOption } from "react-icons/gr";
 import { MdMailOutline } from "react-icons/md";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
+import { Link as Scroll } from "react-scroll";
 const FrontPage = () => {
   return (
     <>
@@ -25,14 +26,27 @@ const FrontPage = () => {
                       Abhinav Rautela
                     </h1>
                   </div>
-                  <p className="text-2xl font-sans tracking-tighter text-white ml-3">
-                    I&#39;m a
-                    <span className=" ml-2 sm:tracking-widest">
-                      Full Stack Web Devloper
-                    </span>
-                  </p>
+
+                  <TextAnimation.Clip
+                    target="_"
+                    text={[
+                      "Freelancer",
+                      "Web Designer",
+                      "FrontEnd Devloper",
+                      "BackEnd Devloper",
+                    ]}
+                    cname="font-thin text-xl tracking-widest"
+                    animation={{
+                      duration: 700,
+                      delay: 3000,
+                      timingFunction: "ease-in-out",
+                    }}
+                    loop={true}
+                  >
+                    I&#39;m a _
+                  </TextAnimation.Clip>
                 </div>
-                <div className="self-end sm:self-center py-4 sm:py-0">
+                <div className="self-end sm:self-center py-4 sm:py-0 ">
                   <div className="inline-block sm:flex sm:py-3 sm:space-x-8 ">
                     <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100  shadow-gray-900 hover:bg-[#101010] hover:text-color-[#2a8171] ease-in duration-300 hover:text-[#22a18a]">
                       <a
@@ -62,9 +76,15 @@ const FrontPage = () => {
                       </Link>
                     </div>
                     <div className="rounded-full  p-3 cursor-pointer shadow-lg text-gray-100 shadow-gray-900 hover:bg-[#101010] ease-in duration-300 hover:text-[#22a18a]">
-                      <a href="" target="_blank">
+                      <Scroll
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={500}
+                      >
                         <BsFillPersonLinesFill />
-                      </a>
+                      </Scroll>
                     </div>
                   </div>
                 </div>
