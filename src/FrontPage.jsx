@@ -16,12 +16,12 @@ const FrontPage = () => {
                 <div className="flex flex-col items-center pt-20">
                   <div className="space-x-2 ">
                     <h1
-                      className="hidden sm:text-transparent ml-3 font-extrabold
+                      className="hidden sm:text-transparent ml-3 font-pop
                       sm:text-[#22a18a] sm:inline-block"
                     >
                       Abhinav Rautela
                     </h1>
-                    <h1 className="sm:hidden font-bold text-white ">
+                    <h1 className="sm:hidden font-pop text-white ">
                       Abhinav Rautela
                     </h1>
                   </div>

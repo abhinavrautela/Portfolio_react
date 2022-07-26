@@ -8,7 +8,12 @@ import {
   BsGithub,
   BsFacebook,
 } from "react-icons/bs";
-import { DiCss3, DiJavascript1, DiHtml5, DiReact } from "react-icons/di";
+import {
+  DiCss3,
+  DiHtml5,
+  DiReact,
+  DiNodejsSmall,
+} from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import Card from "./Card";
@@ -112,8 +117,8 @@ const About = () => {
         <div className="self-start w-full space-y-10">
           <div>
             <div className="pb-7">
-              <h2>Skills</h2>
-              <p className="text-xs">What can I do</p>
+              <h2>Skills / Tools</h2>
+              <p className="text-xs ml-3">What can I do</p>
             </div>
             <div className="space-y-5 hidden sm:block">
               <div className="flex justify-between">
@@ -126,8 +131,8 @@ const About = () => {
                   <h3 className="text-xl font-normal">Css3</h3>
                 </Card>
                 <Card>
-                  <DiJavascript1 size="60" />
-                  <h3 className="text-xl font-normal">JavaScript</h3>
+                  <DiNodejsSmall size="60" />
+                  <h3 className="text-xl font-normal">Node</h3>
                 </Card>
               </div>
               <div className="flex justify-between">
@@ -160,8 +165,8 @@ const About = () => {
               </Card>
               <Card>
                 <div className="w-[85%] flex justify-between items-center">
-                  <DiJavascript1 size="60" />
-                  <h3 className="text-xl font-normal">JavaScript</h3>
+                  <DiNodejsSmall size="60" />
+                  <h3 className="text-xl font-normal">Node</h3>
                 </div>
               </Card>
 
