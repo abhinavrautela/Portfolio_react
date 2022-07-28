@@ -35,7 +35,7 @@ const FrontPage = () => {
                       "FrontEnd Devloper",
                       "BackEnd Devloper",
                     ]}
-                    cname="font-thin text-xl tracking-widest text-indigo-200"
+                    cname="font-thin text-xl tracking-widest text-[#3cb29c]"
                     animation={{
                       duration: 700,
                       delay: 3000,

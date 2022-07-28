@@ -16,6 +16,7 @@ import {
   DiNodejsSmall,
 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import Card from "./Card";
 
@@ -166,10 +167,7 @@ const About = () => {
               </Card>
               <Card>
                 <div className="w-[85%] flex justify-between items-center">
-                  <DiNodejsSmall
-                    size="60"
-
-                  />
+                  <DiNodejsSmall size="60" />
                   <h3 className="text-xl font-normal">Node</h3>
                 </div>
               </Card>
@@ -195,17 +193,20 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full relative">
+          <div className="rounded-full absolute top-[50%] select-none z-[2] -left-5 p-3 cursor-pointer shadow-lg text-gray-200  shadow-gray-900 bg-[#101010]  hover:text-[#22a18a]">
+            <AiOutlineLeft />
+          </div>
           <div className="pb-7 inline-block">
             <h2>Testimonials</h2>
             <p className="text-xs text-center ml-1">
               What my clients think about me
             </p>
           </div>
-          <div className=" flex  space-x-4 overflow-x-auto pb-4 h-max">
+          <div className=" flex  space-x-4  overflow-x-auto pb-4 h-max">
             <Card myTheme="notask">
-              <div>
-                <div className="flex justify-between items-center">
+              <div className="">
+                <div className="flex justify-between  items-center">
                   <div className="flex items-center space-x-4">
                     <img
                       className=" object-cover rounded-full h-16 w-16 "
@@ -302,6 +303,9 @@ const About = () => {
                 </div>
               </div>
             </Card>
+          </div>
+          <div className="rounded-full absolute top-[50%] select-none z-[2] -right-5 p-3 cursor-pointer shadow-sm text-gray-200  shadow-gray-800 hover:shadow-none  bg-[#120f0f]  hover:text-[#22a18a]">
+            <AiOutlineRight className="" />
           </div>
         </div>
       </div>
