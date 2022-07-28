@@ -18,7 +18,7 @@
 
 
     h1 {
-        @apply  font-extrabold text-5xl md:text-6xl tracking-wide
+        @apply font-pop text-5xl md:text-6xl tracking-wide
     }
 
     h2 {
@@ -33,6 +33,7 @@
     button {
         @apply shadow-md
     }
+    
     
         
 }

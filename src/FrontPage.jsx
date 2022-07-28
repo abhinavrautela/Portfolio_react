@@ -17,12 +17,12 @@ const FrontPage = () => {
                 <div className="flex flex-col items-center pt-20">
                   <div className="space-x-2 ">
                     <h1
-                      className="hidden sm:text-transparent ml-3 font-pop
-                      sm:text-[#22a18a] sm:inline-block"
+                      className="hidden sm:block ml-3 font-pop
+                      "
                     >
                       Abhinav Rautela
                     </h1>
-                    <h1 className="sm:hidden font-pop text-white ">
+                    <h1 className="sm:hidden  text-[#22a18a] ">
                       Abhinav Rautela
                     </h1>
                   </div>
@@ -35,7 +35,7 @@ const FrontPage = () => {
                       "FrontEnd Devloper",
                       "BackEnd Devloper",
                     ]}
-                    cname="font-thin text-xl tracking-widest"
+                    cname="font-thin text-xl tracking-widest text-indigo-200"
                     animation={{
                       duration: 700,
                       delay: 3000,

@@ -5,77 +5,100 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { MdMailOutline } from "react-icons/md";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
+
 const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
+  const [myTheme, setMyTheme] = useState("");
 
-  const toggalNav = () => {
+ 
+const toggelTheme = () =>{
+  setMyTheme(" bg-black h-12")
+}
+const toggelThemeReverse = () => {
+  setMyTheme("h-16");
+
+};
+const toggalNav = () => {
     setNavBar(!navBar);
   };
   return (
     <>
       <div>
-        <div className="p-1 w-full h-100 z-[100] fixed bg-black/70">
-          <div
-            className={navBar ? "hidden" : "flex items-center justify-between"}
-          >
-            <div>
-              <img className="h-10 w-20" src="../image/SignAR.png" alt="/" />
+        <div
+          className={
+            navBar
+              ? "hidden"
+              : `fixed flex items-center ease-out duration-1000  justify-between p-1 w-full z-[100] ${myTheme}`
+          }
+        >
+          <div>
+            <img className="h-10 w-20 " src="../image/SignAR.png" alt="/" />
+          </div>
+          <div>
+            <div className="hidden  text-white p-2 sm:flex  uppercase">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onSetActive={toggelThemeReverse}
+              >
+                <h1
+                  className={`ml-10 text-sm font-semibold hover:scale-125  ease-in-out  duration-200 cursor-pointer `}
+                >
+                  Home
+                </h1>
+              </Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onSetActive={toggelTheme}
+              >
+                <h1
+                  className={`ml-10 text-sm  hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer `}
+                >
+                  About
+                </h1>
+              </Link>
+
+              <Link
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                <h1
+                  className={`ml-10 text-sm  hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer `}
+                >
+                  Project
+                </h1>
+              </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+                <h1
+                  className={`ml-10 text-sm  hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer `}
+                >
+                  Contact
+                </h1>
+              </Link>
             </div>
-            <div>
-              <div className="hidden  text-white p-2 sm:flex  uppercase">
-                <Link
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-                >
-                  <h1 className="ml-10  font-semibold text-sm hover:scale-125  ease-in-out  duration-200 cursor-pointer">
-                    Home
-                  </h1>
-                </Link>
-                <Link
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                >
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
-                    About
-                  </h1>
-                </Link>
 
-                <Link
-                  to="project"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                >
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
-                    Project
-                  </h1>
-                </Link>
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-150}
-                  duration={500}
-                >
-                  <h1 className="ml-10 text-sm hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer">
-                    Contact
-                  </h1>
-                </Link>
-              </div>
-
-              <div className="sm:hidden p-2">
-                <CgMenuRight onClick={toggalNav} />
-              </div>
+            <div className="sm:hidden p-2">
+              <CgMenuRight onClick={toggalNav} />
             </div>
           </div>
         </div>
+
         <div
           className={
             navBar
