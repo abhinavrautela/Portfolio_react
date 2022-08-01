@@ -4,7 +4,7 @@ const Card = ({children, myTheme}) => {
     let themeClass =
       "mb-5 min-w-[45%] h-36 sm:min-w-[11%] sm:mb-0 flex flex-col rounded-full  sm:border-b-4  justify-center items-center  sm:border-b-[#1e1b1b] hover:border-b-[#2a8171]";
     if (myTheme == "notask"){
-        themeClass = "min-w-[95%] rounded-md sm:min-w-[55%] ";
+        themeClass = "min-w-[95%] px-7 py-4 rounded-md sm:min-w-[55%] ";
     }
   return (
     <>
