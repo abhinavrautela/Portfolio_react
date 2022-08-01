@@ -11,13 +11,13 @@ const ContactMe = () => {
   return (
     <div id="contact" className="w-[100%] flex flex-col items-center  px-5 sm:px-24 pt-24 ">
       <div className="flex items-center space-x-3">
-        <div className="text-center">
-          <p className="tracking-tighter text-xs sm:text-sm">
+        <div >
+          <p className="tracking-tighter text-center text-xs sm:text-sm">
             Feel free to contact me anytime
           </p>
-          <h1>Get in Touch</h1>
+          <h1 className="text-4xl sm:text-5xl">Get in Touch</h1>
         </div>
-        <div className="mt-8">
+        <div className="mt-6">
           <TbArrowWaveRightDown size={20} />
         </div>
       </div>
