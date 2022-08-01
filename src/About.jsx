@@ -26,7 +26,7 @@ const About = () => {
             <h1>About Me</h1>
           </div>
           <div className="mt-6">
-            <TbArrowWaveRightDown size={20}/>
+            <TbArrowWaveRightDown size={20} />
           </div>
         </div>
         <div className="flex flex-col items-center sm:flex-row  sm:justify-between ">
@@ -120,35 +120,47 @@ const About = () => {
         </div>
         <div className="self-start w-full space-y-10">
           <div>
-            <div className="pb-7">
-              <h2>Tools</h2>
-              <p className="text-xs ">Which I use!</p>
+            <div className="pb-7 inline-block">
+              <h2 className="tracking-widest">Tools</h2>
+              <p className="text-xs tracking-tighter text-center">Which I use to</p>
             </div>
 
             <div className="flex justify-between sm:justify-around items-center  p-6 overflow-x-auto ">
               <Card>
                 <DiHtml5 size="40" />
-                <h3 className="text-xl font-normal">HTML5</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  HTML5
+                </h3>
               </Card>
               <Card>
                 <DiCss3 size="40" />
-                <h3 className="text-xl font-normal">Css3</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  Css3
+                </h3>
               </Card>
               <Card>
                 <DiNodejsSmall size="40" />
-                <h3 className="text-xl font-normal">Node</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  Node
+                </h3>
               </Card>
               <Card>
                 <DiReact size="40" />
-                <h3 className="text-xl font-normal">React</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  React
+                </h3>
               </Card>
               <Card>
                 <SiTailwindcss size="40" />
-                <h3 className="text-xl font-normal">TailwindCSS</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  TailwindCSS
+                </h3>
               </Card>
               <Card>
                 <BsGithub size="40" />
-                <h3 className="text-xl font-normal">GIT</h3>
+                <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
+                  GIT
+                </h3>
               </Card>
             </div>
           </div>
@@ -158,7 +170,7 @@ const About = () => {
             <AiOutlineLeft />
           </div>
           <div className="pb-7 inline-block">
-            <h2>Testimonials</h2>
+            <h2 className="tracking-widest">Testimonials</h2>
             <p className="text-xs text-center ml-1">
               What my clients think about me
             </p>
