@@ -5,15 +5,21 @@ import { IoMdCall, IoIosSend } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
+import { TbArrowWaveRightDown } from "react-icons/tb";
 
 const ContactMe = () => {
   return (
-    <div id="contact" className="w-[100%] px-5 sm:px-24 pt-24 ">
-      <div className="text-center">
-        <p className="tracking-tighter text-xs sm:text-sm">
-          Feel free to contact me anytime
-        </p>
-        <h1>Get in Touch</h1>
+    <div id="contact" className="w-[100%] flex flex-col items-center  px-5 sm:px-24 pt-24 ">
+      <div className="flex items-center space-x-3">
+        <div className="text-center">
+          <p className="tracking-tighter text-xs sm:text-sm">
+            Feel free to contact me anytime
+          </p>
+          <h1>Get in Touch</h1>
+        </div>
+        <div className="mt-8">
+          <TbArrowWaveRightDown size={20} />
+        </div>
       </div>
       <div className="pt-14 sm:flex space-y-8 sm:space-y-0 justify-between">
         <div className="sm:w-[60%] space-y-3">

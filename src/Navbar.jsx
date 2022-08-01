@@ -102,14 +102,14 @@ const toggalNav = () => {
         <div
           className={
             navBar
-              ? "fixed ease-in duration-300 top-0 left-0 w-full h-screen bg-black/90"
+              ? "fixed ease-in duration-300 top-0 left-0 w-full h-screen  bg-black/90"
               : ""
           }
         >
           <div
             className={
               navBar
-                ? "fixed  duration-500 p-6 top-0 left-0 w-[75%] sm:w-[65%] md:w-[40%] h-screen "
+                ? "fixed duration-500 p-6 top-0 left-0 w-[75%] sm:w-[65%] md:w-[40%] h-screen "
                 : "fixed left-[-100%] h-screen top-0 ease-in duration-100 "
             }
           >
@@ -186,9 +186,6 @@ const toggalNav = () => {
                     </div>
                     <div className="rounded-full p-3 cursor-pointer shadow-lg text-gray-200 shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
                       <MdMailOutline />
-                    </div>
-                    <div className="rounded-full p-3 cursor-pointer shadow-lg text-gray-200 shadow-gray-900 hover:bg-[#101010] ease-in duration-300">
-                      <BsFillPersonLinesFill />
                     </div>
                   </div>
                 </div>
