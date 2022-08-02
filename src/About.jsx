@@ -8,6 +8,8 @@ import {
   BsTwitter,
   BsGithub,
   BsFacebook,
+  BsChevronCompactLeft,
+  BsChevronCompactRight,
 } from "react-icons/bs";
 import { DiCss3, DiHtml5, DiReact, DiNodejsSmall } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
@@ -18,10 +20,10 @@ import Card from "./Card";
 
 const About = () => {
   return (
-    <div id="about" className="w-[100%] px-5 sm:px-24 pt-28">
+    <div id="about" className="w-[100%] px-7 sm:px-24 pt-28">
       <div className="flex flex-col items-center space-y-8 sm:space-y-20 ">
         <div className="flex items-center space-x-3">
-          <div>
+          <div className="space-y-4">
             <p className="font-mono text-xs text-center">Get to know</p>
             <h1>About Me</h1>
           </div>
@@ -29,7 +31,7 @@ const About = () => {
             <TbArrowWaveRightDown size={20} />
           </div>
         </div>
-        <div className="flex flex-col items-center sm:flex-row  sm:justify-between ">
+        <div className="flex flex-col items-center sm:flex-row space-y-4 sm:space-y-0  sm:justify-between ">
           <div className="p-2 border border-[#2a8171]  inline-block rounded-full sm:rounded-md ">
             <img
               className="object-cover rounded-full sm:rounded-none h-36 w-36 sm:h-96 sm:w-96 "
@@ -38,11 +40,13 @@ const About = () => {
             />
             <div className="w-full h-full bg-black "></div>
           </div>
-          <div className=" sm:w-[53%] space-y-4">
-            <h3 className="text-[#22a18a] text-xl font-extralight">
+          <div className="w-[100%] space-y-2 sm:w-[53%] sm:space-y-4">
+            <h3 className="text-[#22a18a] text-xl text-center sm:text-left  font-extralight">
               Who I am ?
             </h3>
-            <h2 className="font-sans">I am Abhinav Rautela </h2>
+            <h2 className="font-sans text-center text-2xl sm:text-5xl sm:text-left ">
+              I am Abhinav Rautela{" "}
+            </h2>
             <p className=" text-justify pb-4  border-b border-[#292626]">
               I am a freelancer based in the India and I have been building
               programs UX/UI designs and websites, which comply with the latest
@@ -82,11 +86,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex space-x-4 items-center grow">
+            <div className="flex justify-between sm:justify-start sm:space-x-4 items-center grow">
               <Button myTheme="notsimple">Download CV</Button>
-              <span className=" border border-gray-400 w-20"></span>
-              <div className="flex ">
-                <div className="ml-3 cursor-pointer">
+              <span className="w-8 sm:w-20 border border-gray-400"></span>
+              <div className="flex">
+                <div className="cursor-pointer">
                   <a href="https://twitter.com/A6hi9v" target="_blank">
                     <BsTwitter />
                   </a>
@@ -96,7 +100,7 @@ const About = () => {
                     <BsInstagram />
                   </a>
                 </div>
-                <div className="ml-3 cursor-pointer">
+                <div className="ml-3 hidden sm:block cursor-pointer">
                   <a
                     href="https://www.linkedin.com/in/abhinav-rautela/"
                     target="_blank"
@@ -109,7 +113,7 @@ const About = () => {
                     <BsGithub />
                   </a>
                 </div>
-                <div className="ml-3 cursor-pointer">
+                <div className="ml-3 hidden sm:block cursor-pointer">
                   <a href="" target="_blank">
                     <BsFacebook />
                   </a>
@@ -120,12 +124,15 @@ const About = () => {
         </div>
         <div className="self-start w-full space-y-10">
           <div>
-            <div className="pb-7 inline-block">
-              <h2 className="tracking-widest">Tools</h2>
-              <p className="text-xs tracking-tighter text-center">Which I use to</p>
+            <div className="pb-7 inline-block space-y-2">
+              <h2 className="tracking-widest font-pop">Tools</h2>
+              <p className="text-xs tracking-tighter text-center">
+                Which I use !
+              </p>
             </div>
 
-            <div className="flex justify-between sm:justify-around items-center  p-6 overflow-x-auto ">
+            <div className="flex sm:justify-between items-center p-6 overflow-x-auto ">
+              <BsChevronCompactLeft size={30} />
               <Card>
                 <DiHtml5 size="40" />
                 <h3 className="sm:text-lg text-xm font-mono sm:font-bold ">
@@ -162,20 +169,21 @@ const About = () => {
                   GIT
                 </h3>
               </Card>
+              <BsChevronCompactRight size={30} />
             </div>
           </div>
         </div>
         <div className="w-full relative">
-          <div className="rounded-full absolute top-[50%] select-none z-[2] -left-5 p-3 cursor-pointer shadow-lg text-gray-200  shadow-gray-900 bg-[#101010]  hover:text-[#22a18a]">
+          <div className="rounded-full absolute top-[50%] select-none z-[2] -left-5 p-3 cursor-pointer shadow-lg text-gray-200  bg-[#606060]  hover:text-[#22a18a]">
             <AiOutlineLeft />
           </div>
-          <div className="pb-7 inline-block">
-            <h2 className="tracking-widest">Testimonials</h2>
-            <p className="text-xs text-center ml-1">
+          <div className="pb-7 space-y-4 inline-block">
+            <h2 className="tracking-wide font-pop">Testimonials</h2>
+            <p className="text-xs text-center ">
               What my clients think about me
             </p>
           </div>
-          <div className=" flex  space-x-4  overflow-x-auto pb-4 h-max">
+          <div className=" flex sm:space-x-10 space-x-3 overflow-x-auto pb-4 h-max">
             <Card myTheme="notask">
               <div className="">
                 <div className="flex justify-between  items-center">
@@ -200,11 +208,7 @@ const About = () => {
                     tempora quasi illo quisquam saepe nostrum cumque? Eaque aut,
                     vitae nisi laudantium ex facere iste quis itaque voluptas
                     odit adipisci nam accusantium quae iusto ea porro autem sunt
-                    totam. Repellat dignissimos cumque id, sed eius totam
-                    deserunt. Cum in necessitatibus deserunt modi reprehenderit,
-                    eveniet dolor est dicta voluptatum odio vel voluptates ullam
-                    a suscipit quisquam officiis excepturi nisi enim aut? Rerum
-                    veritatis placeat voluptate corporis,
+                    totam.
                   </p>
                 </div>
               </div>
@@ -233,11 +237,7 @@ const About = () => {
                     tempora quasi illo quisquam saepe nostrum cumque? Eaque aut,
                     vitae nisi laudantium ex facere iste quis itaque voluptas
                     odit adipisci nam accusantium quae iusto ea porro autem sunt
-                    totam. Repellat dignissimos cumque id, sed eius totam
-                    deserunt. Cum in necessitatibus deserunt modi reprehenderit,
-                    eveniet dolor est dicta voluptatum odio vel voluptates ullam
-                    a suscipit quisquam officiis excepturi nisi enim aut? Rerum
-                    veritatis placeat voluptate corporis,
+                    totam.
                   </p>
                 </div>
               </div>
@@ -266,17 +266,13 @@ const About = () => {
                     tempora quasi illo quisquam saepe nostrum cumque? Eaque aut,
                     vitae nisi laudantium ex facere iste quis itaque voluptas
                     odit adipisci nam accusantium quae iusto ea porro autem sunt
-                    totam. Repellat dignissimos cumque id, sed eius totam
-                    deserunt. Cum in necessitatibus deserunt modi reprehenderit,
-                    eveniet dolor est dicta voluptatum odio vel voluptates ullam
-                    a suscipit quisquam officiis excepturi nisi enim aut? Rerum
-                    veritatis placeat voluptate corporis,
+                    totam.
                   </p>
                 </div>
               </div>
             </Card>
           </div>
-          <div className="rounded-full absolute top-[50%] select-none z-[2] -right-5 p-3 cursor-pointer shadow-sm text-gray-200  shadow-gray-800 hover:shadow-none  bg-[#120f0f]  hover:text-[#22a18a]">
+          <div className="rounded-full absolute top-[50%] select-none z-[2] -right-5 p-3 cursor-pointer  text-gray-200 bg-[#606060]     hover:text-[#22a18a]">
             <AiOutlineRight className="" />
           </div>
         </div>

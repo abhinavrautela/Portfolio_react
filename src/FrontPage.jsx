@@ -10,20 +10,12 @@ const FrontPage = () => {
   return (
     <>
       <div id="home">
-        <div >
+        <div>
           <div className="bg-cover object-cover bg-[url(../image/oldhouse_.jpg)] sm:bg-[url(../image/oldhouse.jpg)]">
             <div className=" bg-black/80">
-              <div className="h-screen w-full sm:w-[50%] flex flex-col justify-end sm:justify-center sm:items-center ">
+              <div className="h-screen w-full  flex flex-col justify-end sm:justify-center sm:items-center ">
                 <div className="space-x-2 flex flex-col items-center">
-                  <div className="">
-                    <h1
-                      className="hidden sm:block ml-3 font-pop
-                      "
-                    >
-                      Abhinav Rautela
-                    </h1>
-                    <h1 className="sm:hidden  ">Abhinav Rautela</h1>
-                  </div>
+                  <h1 className="font-pop text-4xl sm:text-6xl">Abhinav Rautela</h1>
                   <TextAnimation.Clip
                     target="_"
                     text={["Freelancer", "Web Designer", "FullStack Devloper"]}

@@ -11,8 +11,8 @@ const ContactMe = () => {
   return (
     <div id="contact" className="w-[100%] flex flex-col items-center  px-5 sm:px-24 pt-24 ">
       <div className="flex items-center space-x-3">
-        <div >
-          <p className="tracking-tighter text-center text-xs sm:text-sm">
+        <div className="space-y-4">
+          <p className="tracking-tighter text-center text-xs">
             Feel free to contact me anytime
           </p>
           <h1 className="text-4xl sm:text-5xl">Get in Touch</h1>
@@ -69,38 +69,38 @@ const ContactMe = () => {
 
           <div>
             <IconContext.Provider value={{ color: "#2a8171" }}>
-              <div className="flex items-center py-2">
-                <div className="pr-5 border-r   border-gray-500">
+              <div className="flex  items-center py-2">
+                <div className="pr-5">
                   <VscSymbolNamespace size="30" />
                 </div>
-                <div className="pl-16">
+                <div className="pl-16 border-l-2 border-gray-300 ">
                   <h3 className="font-semibold text-xl">Name</h3>
                   <p className="text-sm">Abhinav Rautela</p>
                 </div>
               </div>
               <div className="flex items-center py-2">
-                <div className="pr-5 border-r border-gray-500">
+                <div className="pr-5">
                   <ImLocation size="30" />
                 </div>
-                <div className="pl-16">
+                <div className="pl-16 border-l-2 border-gray-300">
                   <h3 className="font-semibold text-xl">Location</h3>
                   <p className="text-sm">Nainital, 263002</p>
                 </div>
               </div>
               <div className="flex items-center py-2">
-                <div className="pr-5 border-r border-gray-500">
+                <div className="pr-5">
                   <IoMdCall size="30" />
                 </div>
-                <div className="pl-16">
+                <div className="pl-16 border-l-2 border-gray-300">
                   <h3 className="font-semibold text-xl">PhoneNO.</h3>
                   <p className="text-sm">12345</p>
                 </div>
               </div>
               <div className="flex items-center py-2">
-                <div className="pr-5 border-r border-gray-500">
+                <div className="pr-5">
                   <IoIosSend size="30" />
                 </div>
-                <div className="pl-16">
+                <div className="pl-16 border-l-2 border-gray-300">
                   <h3 className="font-semibold text-xl ">EMail</h3>
                   <p className="text-sm">
                     <Link

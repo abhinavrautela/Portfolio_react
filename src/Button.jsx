@@ -12,7 +12,7 @@ if (myTheme == "notsimple") {
   return (
     <div>
       <button
-        className={`text-sm rounded-3xl font-medium bg-[#2a8171] hover:bg-[#3cb29c] outline outline-[#2a8171] outline-offset-2 ${themeClass}`}
+        className={`text-xs sm:text-sm rounded-3xl font-medium tracking-tighter bg-[#2a8171] hover:bg-[#3cb29c] outline outline-[#2a8171] outline-offset-2 ${themeClass}`}
         onClick={onClick}
       >
         {children}
