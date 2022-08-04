@@ -14,7 +14,8 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scroll": "^1.8.7",
-    "react-text-animations": "^1.1.10"
+    "react-text-animations": "^1.1.10",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

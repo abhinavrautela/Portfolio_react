@@ -1,9 +1,8 @@
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose, AiFillGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { MdMailOutline } from "react-icons/md";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
 
 const Navbar = () => {
@@ -11,13 +10,18 @@ const Navbar = () => {
   const [myTheme, setMyTheme] = useState("");
 
  
-const toggelTheme = () =>{
-  setMyTheme(" bg-black h-12")
-}
-const toggelThemeReverse = () => {
-  setMyTheme("h-16");
+  useEffect(() => {
+    const changeColor = () =>{
+     if(window.scrollY >=10){
+      setMyTheme("bg-black sm:bg-black/80 sm:p-2");
 
-};
+     }
+     else{
+      setMyTheme("bg-transparent sm:p-4");
+     }
+    }; window.addEventListener('scroll', changeColor)
+  },[])
+
 const toggalNav = () => {
     setNavBar(!navBar);
   };
@@ -28,7 +32,7 @@ const toggalNav = () => {
           className={
             navBar
               ? "hidden"
-              : `fixed flex items-center ease-out duration-1000  justify-between p-1 w-full z-[100] ${myTheme}`
+              : `fixed flex items-center  ease-out duration-1000 p-1  justify-between w-full z-[100] ${myTheme}`
           }
         >
           <div>
@@ -42,7 +46,6 @@ const toggalNav = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                onSetActive={toggelThemeReverse}
               >
                 <h1
                   className={`ml-10 text-sm font-semibold hover:scale-125  ease-in-out  duration-200 cursor-pointer `}
@@ -56,7 +59,6 @@ const toggalNav = () => {
                 smooth={true}
                 offset={-50}
                 duration={500}
-                onSetActive={toggelTheme}
               >
                 <h1
                   className={`ml-10 text-sm  hover:scale-125 ease-in-out font-semibold duration-200 cursor-pointer `}
@@ -66,7 +68,7 @@ const toggalNav = () => {
               </Link>
 
               <Link
-                to="project"
+                to="projects"
                 spy={true}
                 smooth={true}
                 offset={-80}

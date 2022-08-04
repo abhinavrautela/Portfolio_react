@@ -23,13 +23,8 @@ const About = () => {
     <div id="about" className="w-[100%] px-7 sm:px-24 pt-28">
       <div className="flex flex-col items-center space-y-8 sm:space-y-20 ">
         <div className="flex items-center space-x-3">
-          <div className="space-y-4">
-            <p className="font-mono text-xs text-center">Get to know</p>
-            <h1>About Me</h1>
-          </div>
-          <div className="mt-6">
-            <TbArrowWaveRightDown size={20} />
-          </div>
+          <p className="font-mono text-xs text-center">Get to know</p>
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl">About Me</h1>
         </div>
         <div className="flex flex-col items-center sm:flex-row space-y-4 sm:space-y-0  sm:justify-between ">
           <div className="p-2 border border-[#2a8171]  inline-block rounded-full sm:rounded-md ">
@@ -173,7 +168,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full relative">
+        {/*  TESTIMONIALS */}
+        {/* <div className="w-full relative">
           <div className="rounded-full absolute top-[50%] select-none z-[2] -left-5 p-3 cursor-pointer shadow-lg text-gray-200  bg-[#606060]  hover:text-[#22a18a]">
             <AiOutlineLeft />
           </div>
@@ -275,7 +271,7 @@ const About = () => {
           <div className="rounded-full absolute top-[50%] select-none z-[2] -right-5 p-3 cursor-pointer  text-gray-200 bg-[#606060]     hover:text-[#22a18a]">
             <AiOutlineRight className="" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

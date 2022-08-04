@@ -11,7 +11,7 @@ const FrontPage = () => {
     <>
       <div id="home">
         <div>
-          <div className="bg-cover object-cover bg-[url(../image/oldhouse_.jpg)] sm:bg-[url(../image/oldhouse.jpg)]">
+          <div className="bg-cover bg-fixed object-cover  bg-[url(../image/oldhouse_.jpg)] sm:bg-[url(../image/oldhouse.jpg)]">
             <div className=" bg-black/80">
               <div className="h-screen w-full  flex flex-col justify-end sm:justify-center sm:items-center ">
                 <div className="space-x-2 flex flex-col items-center">

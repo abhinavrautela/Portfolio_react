@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { userSchema } from "./UserVelidation";
 import Button from "./Button";
 import { VscSymbolNamespace } from "react-icons/vsc";
 import { IoMdCall, IoIosSend } from "react-icons/io";
@@ -8,18 +9,38 @@ import { IconContext } from "react-icons/lib";
 import { TbArrowWaveRightDown } from "react-icons/tb";
 
 const ContactMe = () => {
+  const [nameText, setnameText] = useState("");
+  const [emailText, setEmailText] = useState("");
+
+  const myName = (event) => {
+    setnameText(event.target.value);
+  };
+  const myEmail = (event) => {
+    setEmailText(event.target.value);
+  };
+
+  const collectUserData = () => {
+    let formData = {
+      name: nameText,
+      email: emailText,
+    };
+    const isValid = userSchema.isValid(formData);
+    console.log(isValid);
+  };
   return (
-    <div id="contact" className="w-[100%] flex flex-col items-center  px-5 sm:px-24 pt-24 ">
+    <div
+      id="contact"
+      className="w-[100%] flex flex-col items-center  px-5 sm:px-24 pt-24 "
+    >
       <div className="flex items-center space-x-3">
-        <div className="space-y-4">
-          <p className="tracking-tighter text-center text-xs">
-            Feel free to contact me anytime
-          </p>
-          <h1 className="text-4xl sm:text-5xl">Get in Touch</h1>
-        </div>
-        <div className="mt-6">
-          <TbArrowWaveRightDown size={20} />
-        </div>
+        <p className="tracking-tighter text-center text-xs flex items-center">
+          Feel free to
+          <span className="text-3xl sm:text-5xl lg:text-6xl font-pop text-gray-200 mx-4">
+           
+            Contact Me
+          </span>
+          anytime
+        </p>
       </div>
       <div className="pt-14 sm:flex space-y-8 sm:space-y-0 justify-between">
         <div className="sm:w-[60%] space-y-3">
@@ -28,17 +49,17 @@ const ContactMe = () => {
             <div className="w-[46%]">
               <input
                 placeholder="Name "
-                value={""}
-                onChange={""}
+                value={nameText}
+                onChange={myName}
                 type="text"
-                className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+                className="bg-[#1e1b1b] w-full p-3 outline-none text-sm  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
               />
             </div>
             <div className="w-[46%]">
               <input
                 placeholder="Email"
-                value={""}
-                onChange={""}
+                value={emailText}
+                onChange={myEmail}
                 type="text"
                 className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
               />
@@ -47,8 +68,6 @@ const ContactMe = () => {
           <div className="space-y-3">
             <input
               placeholder="Subject"
-              value={""}
-              onChange={""}
               type="text"
               className="bg-[#1e1b1b] w-full p-3 outline-none border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
             />
@@ -56,7 +75,11 @@ const ContactMe = () => {
               placeholder="Message"
               className="bg-[#1e1b1b] w-full h-32 p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
             ></textarea>
-            <Button children={"Send Message"} myTheme="simple" />
+            <Button
+              children={"Send Message"}
+              myTheme="simple"
+              onClick={collectUserData}
+            />
           </div>
         </div>
 
