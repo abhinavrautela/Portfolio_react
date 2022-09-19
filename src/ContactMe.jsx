@@ -11,7 +11,7 @@ import { userSchema } from "./UserVelidation";
 const ContactMe = () => {
   const form = useRef();
   const [messageSent, setMessageSent] = useState();
-  let myTheme;
+  let myTheme = "simple";
   let buttonChild = "Send Message";
   if (messageSent) {
     myTheme = "messageTrue";

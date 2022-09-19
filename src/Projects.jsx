@@ -50,16 +50,16 @@ const Projects = () => {
         </div>
         <div className="flex flex-col border border-[#0f4037] shadow-sm shadow-[#3f7269]">
           <div className="overflow-hidden px-5">
-            <a href="https://dainty-llama-a65461.netlify.app/" target="_blank">
+            <a href="https://buy-anything.netlify.app/" target="_blank">
               <img
-                src="../projectImage/todo.png"
+                src="../projectImage/cartImg.png"
                 alt="/"
                 className="h-44 w-72  ease-in duration-300  hover:scale-105"
               />
             </a>
           </div>
           <div className="px-2 border-t border-[#0f4037] space-y-1">
-            <h3 className="text-base font-mono">whatToDo</h3>
+            <h3 className="text-sm font-mono">BuyAnything.com</h3>
 
             <span className="flex items-center ml-2">
               <BiLink size={10} />
@@ -68,7 +68,7 @@ const Projects = () => {
                 href="https://dainty-llama-a65461.netlify.app/"
                 target="_blank"
               >
-                https://todo.app
+                https://BuyAnything
               </a>
             </span>
             <div className="flex items-center space-x-2 ml-1">
@@ -79,7 +79,7 @@ const Projects = () => {
               <span className="text-sm underline opacity-40">JavaScript</span>
             </div>
             <div className="bg-purple-500 bg-opacity-30 inline-block px-2  rounded-md">
-              <h5 className="text-purple-300  text-xs font-thin">App</h5>
+              <h5 className="text-purple-300  text-xs font-thin">E-commerce</h5>
             </div>
           </div>
         </div>
