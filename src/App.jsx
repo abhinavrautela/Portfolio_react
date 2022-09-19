@@ -12,7 +12,6 @@ const App = () => {
       <FrontPage />
       <About />
       <Projects />
-
       <ContactMe />
     </div>
   );

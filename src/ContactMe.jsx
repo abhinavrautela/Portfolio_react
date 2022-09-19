@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { userSchema } from "./UserVelidation";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import Button from "./Button";
 import { VscSymbolNamespace } from "react-icons/vsc";
 import { IoMdCall, IoIosSend } from "react-icons/io";
@@ -7,25 +7,39 @@ import { ImLocation } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
 import { TbArrowWaveRightDown } from "react-icons/tb";
-
+import { userSchema } from "./UserVelidation";
 const ContactMe = () => {
-  const [nameText, setnameText] = useState("");
-  const [emailText, setEmailText] = useState("");
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState();
+  let myTheme;
+  let buttonChild = "Send Message";
+  if (messageSent) {
+    myTheme = "messageTrue";
+    buttonChild = "✔ Delivered";
+  }
 
-  const myName = (event) => {
-    setnameText(event.target.value);
-  };
-  const myEmail = (event) => {
-    setEmailText(event.target.value);
-  };
 
-  const collectUserData = () => {
-    let formData = {
-      name: nameText,
-      email: emailText,
-    };
-    const isValid = userSchema.isValid(formData);
-    console.log(isValid);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_vfrj5j7",
+        "template_clpqvt9",
+        form.current,
+        "H9MOCyXs2tMR2zshy"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageSent(true);
+          setTimeout(() => {
+            setMessageSent(false);
+          }, "4000");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div
@@ -36,7 +50,6 @@ const ContactMe = () => {
         <p className="tracking-tighter text-center text-xs flex items-center">
           Feel free to
           <span className="text-3xl sm:text-5xl lg:text-6xl font-pop text-gray-200 mx-4">
-           
             Contact Me
           </span>
           anytime
@@ -45,42 +58,44 @@ const ContactMe = () => {
       <div className="pt-14 sm:flex space-y-8 sm:space-y-0 justify-between">
         <div className="sm:w-[60%] space-y-3">
           <h3 className="text-2xl font-semibold">Message me</h3>
-          <div className=" flex justify-between items-center ">
-            <div className="w-[46%]">
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="flex justify-between items-center mb-2">
+              <div className="w-[46%]">
+                <input
+                  placeholder="Name"
+                  className="bg-[#1e1b1b] w-full p-3 outline-none text-sm border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+                  type="text"
+                  name="user_name"
+                />
+              </div>
+              <div className="w-[46%]">
+                <input
+                  placeholder="Email"
+                  name="user_email"
+                  type="email"
+                  className="bg-[#1e1b1b] w-full p-3 outline-none text-sm border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+                />
+              </div>
+            </div>
+            <div className="space-y-3">
               <input
-                placeholder="Name "
-                value={nameText}
-                onChange={myName}
+                placeholder="Subject"
                 type="text"
-                className="bg-[#1e1b1b] w-full p-3 outline-none text-sm  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+                name="user_subject"
+                className="bg-[#1e1b1b] w-full p-3 outline-none border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                className="bg-[#1e1b1b] w-full h-32 p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
+              ></textarea>
+              <Button
+                children={buttonChild}
+                myTheme={myTheme}
+                onClick={sendEmail}
               />
             </div>
-            <div className="w-[46%]">
-              <input
-                placeholder="Email"
-                value={emailText}
-                onChange={myEmail}
-                type="text"
-                className="bg-[#1e1b1b] w-full p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-              />
-            </div>
-          </div>
-          <div className="space-y-3">
-            <input
-              placeholder="Subject"
-              type="text"
-              className="bg-[#1e1b1b] w-full p-3 outline-none border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-            />
-            <textarea
-              placeholder="Message"
-              className="bg-[#1e1b1b] w-full h-32 p-3 outline-none  border-b border-b-[#1e1b1b] focus:border-b-[#2a8171]"
-            ></textarea>
-            <Button
-              children={"Send Message"}
-              myTheme="simple"
-              onClick={collectUserData}
-            />
-          </div>
+          </form>
         </div>
 
         <div className="sm:w-[35%] w-full space-y-4">

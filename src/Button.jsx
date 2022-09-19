@@ -9,10 +9,17 @@ if (myTheme == "notsimple") {
   themeClass = "  px-7 py-3";
 }
 
+if (myTheme == "messageTrue"){
+   themeClass = "outline-[#37a703]";
+}
+if (myTheme == "messageFalse"){
+  themeClass = "outline-[#c70505]";
+}
   return (
     <div>
       <button
-        className={`text-xs sm:text-sm rounded-3xl font-medium tracking-tighter bg-[#2a8171] hover:bg-[#3cb29c] outline outline-[#2a8171] outline-offset-2 ${themeClass}`}
+        type="submit"
+        className={`text-xs sm:text-sm rounded-3xl font-medium tracking-tighter px-9 py-2  bg-[#2a8171] hover:bg-[#3cb29c] outline outline-[#2a8171] outline-offset-2 ${themeClass}`}
         onClick={onClick}
       >
         {children}

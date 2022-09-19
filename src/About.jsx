@@ -44,10 +44,9 @@ const About = () => {
             </h2>
             <p className=" text-justify pb-4  border-b border-[#292626]">
               I am a freelancer based in the India and I have been building
-              programs UX/UI designs and websites, which comply with the latest
+              programs UI designs and websites, which comply with the latest
               design trends. I help convert a vision and an idea into meaningful
-              and useful products. Having a sharp eye for product evolution
-              helps me prioritize tasks, iterate fast and deliver faster.
+              and useful products.
             </p>
             <div className="block sm:flex justify-between">
               <div>
