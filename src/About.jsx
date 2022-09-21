@@ -81,7 +81,9 @@ const About = () => {
               </div>
             </div>
             <div className="flex justify-between sm:justify-start sm:space-x-4 items-center grow">
-              <Button myTheme="notsimple">Download CV</Button>
+              <a href="../image/myCV.png" download="AbhinavCV">
+                <Button myTheme="notsimple">Download CV</Button>
+              </a>
               <span className="w-8 sm:w-20 border border-gray-400"></span>
               <div className="flex">
                 <div className="cursor-pointer">
@@ -90,9 +92,7 @@ const About = () => {
                   </a>
                 </div>
                 <div className="ml-3 cursor-pointer">
-                  <a href="https://instagram.com/A6hi9v" target="_blank">
-                    <BsInstagram />
-                  </a>
+                  <BsInstagram />
                 </div>
                 <div className="ml-3 hidden sm:block cursor-pointer">
                   <a

@@ -9,20 +9,18 @@ const Navbar = () => {
   const [navBar, setNavBar] = useState(false);
   const [myTheme, setMyTheme] = useState("");
 
- 
   useEffect(() => {
-    const changeColor = () =>{
-     if(window.scrollY >=10){
-      setMyTheme("bg-black sm:bg-black/80 sm:p-2");
+    const changeColor = () => {
+      if (window.scrollY >= 10) {
+        setMyTheme("bg-black sm:bg-black/80 sm:p-2");
+      } else {
+        setMyTheme("bg-transparent sm:p-4");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
 
-     }
-     else{
-      setMyTheme("bg-transparent sm:p-4");
-     }
-    }; window.addEventListener('scroll', changeColor)
-  },[])
-
-const toggalNav = () => {
+  const toggalNav = () => {
     setNavBar(!navBar);
   };
   return (

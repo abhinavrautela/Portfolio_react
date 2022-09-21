@@ -131,7 +131,7 @@ const ContactMe = () => {
                 </div>
                 <div className="pl-16 border-l-2 border-gray-300">
                   <h3 className="font-semibold text-xl">PhoneNO.</h3>
-                  <p className="text-sm">12345</p>
+                  <p className="text-sm">+91 8979756244</p>
                 </div>
               </div>
               <div className="flex items-center py-2">
